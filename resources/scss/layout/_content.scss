@@ -15,6 +15,12 @@
 
 .post-wrapper {
 
+  .post {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 35px;
+  }
+
   .date {
     color: #b8b8b8;
     display: block;
@@ -73,5 +79,24 @@
   .footer-article {
     font-size: 15px;
     color: #a9a9a9;
+    @include clearfix();
+
+    .views {
+      float: left;
+      margin: 16px 0;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+
+      li {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
   }
 }

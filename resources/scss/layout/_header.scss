@@ -2,6 +2,35 @@
   background: #ffde00;
 
   .container {
-  padding: 14px 0;
+    position: relative;
+    padding: 14px 0;
+  }
+
+  .search-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    @include translateY(-50%);
+
+    .field-search {
+      @include border-radius(30px);
+      background: rgba(0, 0, 0, 0.33);
+      color: #fff;
+      border: none;
+      padding: 10px 15px 10px 52px;
+      @include input-placeholder(#fff);
+    }
+
+    .search-btn{
+      border: none;
+      @include text-hide();
+      background: image-url('bg/search.png');
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      @include translateY(-50%);
+      left: 14px;
+    }
   }
 }
