@@ -464,6 +464,7 @@ body {
 }
 .post-wrapper .tags li {
   display: inline-block;
+  margin-right: 4px;
 }
 .post-wrapper .tags a {
   display: block;
@@ -477,6 +478,7 @@ body {
 .post-wrapper .body-article {
   border: 1px solid #dddddd;
   margin-bottom: 12px;
+  padding: 0 15px;
 }
 .post-wrapper .body-article .img {
   text-align: center;
@@ -484,6 +486,8 @@ body {
 .post-wrapper .body-article .img img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto !important;
 }
 .post-wrapper .footer-article {
   font-size: 15px;
