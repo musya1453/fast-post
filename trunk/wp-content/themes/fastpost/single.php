@@ -20,7 +20,7 @@
               <?php get_template_part('content', get_post_format()); ?>
 
               <div class="footer-article">
-                <span class="views"><?php if(function_exists('the_views')) { the_views(); } ?>  Просмотров</span>
+<!--                <span class="views">--><?php //if(function_exists('the_views')) { the_views(); } ?><!-- Просмотров</span>-->
                 <ul class="social-elem">
                   <li><a href="#"><img src="theme/images/tmp/soc-1.jpg" alt=""/></a></li>
                   <li><a href="#"><img src="theme/images/tmp/soc-2.jpg" alt=""/></a></li>

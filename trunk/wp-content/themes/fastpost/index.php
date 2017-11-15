@@ -7,7 +7,7 @@
 
           <?php
           $id = 1; // ID заданной рубрики
-          $n = 10;   // количество выводимых записей
+          $n = 2;   // количество выводимых записей
           $posts = query_posts("cat=$id&showposts=$n");
           if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
@@ -35,9 +35,7 @@
 
               </div>
               <div class="footer-article">
-                <span class="views"><?php if (function_exists('the_views')) {
-                    the_views();
-                  } ?>  Просмотров</span>
+<!--                <span class="views">--><?php //if(function_exists('the_views')) { the_views(); } ?><!-- Просмотров</span>-->
                 <ul class="social-elem">
                   <li><a href="#"><img src="theme/images/tmp/soc-1.jpg" alt=""/></a></li>
                   <li><a href="#"><img src="theme/images/tmp/soc-2.jpg" alt=""/></a></li>
@@ -50,6 +48,7 @@
           else: ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
           <?php endif; ?>
+
         </div>
       </div>
       <div class="right-part">

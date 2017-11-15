@@ -78,6 +78,7 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+define('WP_MEMORY_LIMIT', '128M');
 /* Это всё, дальше не редактируем. Успехов! */
 
 /** Абсолютный путь к директории WordPress. */
@@ -85,4 +86,6 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Инициализирует переменные WordPress и подключает файлы. */
+
 require_once(ABSPATH . 'wp-settings.php');
+
