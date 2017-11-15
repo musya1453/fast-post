@@ -66,17 +66,25 @@
   .body-article {
     border: 1px solid #dddddd;
     margin-bottom: 12px;
-    padding: 0 15px;
+
+    .text {
+      padding: 15px;
+      background: #f8f8f9;
+
+      p {
+        margin: 0;
+      }
+    }
 
     .img {
       text-align: center;
+    }
 
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto !important;
-      }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto !important;
     }
   }
 

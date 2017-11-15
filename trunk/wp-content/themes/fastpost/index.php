@@ -7,7 +7,7 @@
 
           <?php
           $id = 1; // ID заданной рубрики
-          $n = 3;   // количество выводимых записей
+          $n = 10;   // количество выводимых записей
           $posts = query_posts("cat=$id&showposts=$n");
           if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
@@ -27,9 +27,11 @@
                       the_post_thumbnail(array(600, 9999), array('class' => 'img-polaroid'));
                     ?></a>
                 </div>
-                <p>
-                  <?php the_excerpt(); ?>
-                </p>
+               <div class="text">
+                 <p>
+                   <?php the_excerpt(); ?>
+                 </p>
+               </div>
 
               </div>
               <div class="footer-article">

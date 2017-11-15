@@ -3,7 +3,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="left-part">
-        <div class="post-wrapper">
+        <div class="post-wrapper single-post-wrapper">
           <?php /* The loop */ ?>
           <?php while (have_posts()) : the_post(); ?>
             <article class="post">
