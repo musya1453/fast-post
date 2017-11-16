@@ -7,12 +7,13 @@
 
           <?php
           $id = 1; // ID заданной рубрики
-          $n = 2;   // количество выводимых записей
+          $n = 15;   // количество выводимых записей
           $posts = query_posts("cat=$id&showposts=$n");
           if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
             <article class="post">
               <header>
+                <?php edit_post_link('Редактировать запись.', '<p>', '</p>'); ?>
                 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <span class="date"><?php echo get_the_date(); ?></span>
                 <ul class="tags">
