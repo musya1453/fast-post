@@ -120,10 +120,15 @@
       padding: 15px;
       margin: 0;
       background: #f8f8f9;
+      line-height: 1.5;
 
       a {
         color: #e8ae03;
       }
     }
+  }
+
+  &.custom-page a {
+    color: #e8ae03;
   }
 }

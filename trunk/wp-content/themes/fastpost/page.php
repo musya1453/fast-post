@@ -19,7 +19,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="left-part">
-        <div class="post-wrapper">
+        <div class="post-wrapper custom-page">
           <?php /* The loop */ ?>
           <?php if (have_posts()): while (have_posts()): the_post(); ?>
             <article class="post">

@@ -35,3 +35,11 @@ body {
 *{
   @include box-sizing(border-box);
 }
+
+.post-edit-link {
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  padding: 7px;
+  text-decoration: none;
+}
