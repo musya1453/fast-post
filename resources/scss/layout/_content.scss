@@ -49,7 +49,8 @@
 
     li {
       display: inline-block;
-      margin-right: 4px;
+      margin: 0 4px 4px 0;
+      padding: 0;
     }
 
     a {
@@ -70,6 +71,7 @@
     .text {
       padding: 15px;
       background: #f8f8f9;
+      line-height: 1.5;
 
       p {
         margin: 0;
@@ -108,6 +110,19 @@
       li {
         display: inline-block;
         vertical-align: middle;
+      }
+    }
+  }
+
+  &.single-post-wrapper {
+
+    p {
+      padding: 15px;
+      margin: 0;
+      background: #f8f8f9;
+
+      a {
+        color: #e8ae03;
       }
     }
   }

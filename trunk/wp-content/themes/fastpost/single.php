@@ -21,19 +21,19 @@
 
               <div class="footer-article">
 <!--                <span class="views">--><?php //if(function_exists('the_views')) { the_views(); } ?><!-- Просмотров</span>-->
-                <ul class="social-elem">
-                  <li><a href="#"><img src="theme/images/tmp/soc-1.jpg" alt=""/></a></li>
-                  <li><a href="#"><img src="theme/images/tmp/soc-2.jpg" alt=""/></a></li>
-                  <li><a href="#"><img src="theme/images/tmp/soc-3.jpg" alt=""/></a></li>
-                  <li><a href="#"><img src="theme/images/tmp/soc-4.jpg" alt=""/></a></li>
-                </ul>
+<!--                <ul class="social-elem">-->
+<!--                  <li><a href="#"><img src="theme/images/tmp/soc-1.jpg" alt=""/></a></li>-->
+<!--                  <li><a href="#"><img src="theme/images/tmp/soc-2.jpg" alt=""/></a></li>-->
+<!--                  <li><a href="#"><img src="theme/images/tmp/soc-3.jpg" alt=""/></a></li>-->
+<!--                  <li><a href="#"><img src="theme/images/tmp/soc-4.jpg" alt=""/></a></li>-->
+<!--                </ul>-->
               </div>
             </article>
           <?php endwhile; ?>
         </div>
       </div>
       <div class="right-part">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/theme/images/tmp/ads.png" alt=""/>
+        <?php include 're.php';?>
       </div>
     </div>
   </div>

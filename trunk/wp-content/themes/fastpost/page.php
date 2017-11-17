@@ -19,7 +19,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="left-part">
-        <div class="post-wrapper single-post-wrapper">
+        <div class="post-wrapper">
           <?php /* The loop */ ?>
           <?php if (have_posts()): while (have_posts()): the_post(); ?>
             <article class="post">
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="right-part">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/theme/images/tmp/ads.png" alt=""/>
+        <?php include 're.php';?>
       </div>
     </div>
   </div>

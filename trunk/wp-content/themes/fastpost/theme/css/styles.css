@@ -464,7 +464,8 @@ body {
 }
 .post-wrapper .tags li {
   display: inline-block;
-  margin-right: 4px;
+  margin: 0 4px 4px 0;
+  padding: 0;
 }
 .post-wrapper .tags a {
   display: block;
@@ -522,6 +523,11 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+.post-wrapper .single-post-wrapper p {
+  padding: 15px;
+  margin: 0;
+  background: #f8f8f9;
+}
 
 .header-wrapper {
   background: #ffde00;
@@ -530,10 +536,24 @@ body {
   position: relative;
   padding: 14px 0;
 }
+.header-wrapper .link {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
 .header-wrapper .search-wrapper {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 115px;
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
